@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Denpasar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk ikon popup dan fasilitas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Explore<span>Denpasar</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tentang">Tentang Bali</a></li>
+                <li><a href="#game">Jelajah Denpasar</a></li>
+                <li><a href="#kuliner">Kuliner</a></li>
+                <li><a href="#survei">Survei</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="themeToggle" class="btn-icon" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-text text-light reveal reveal-left">
+                <h1>Explore <span>Denpasar</span></h1>
+                <p>Temukan pesona budaya yang kaya dan kelezatan kuliner autentik di jantung Pulau Bali. Pelajari tradisi yang tak lekang oleh waktu dan cicipi rasa yang tak terlupakan.</p>
+                <div class="hero-buttons">
+                    <a href="#kuliner" class="btn btn-primary">Lihat Kuliner</a>
+                    <a href="#survei" class="btn btn-secondary-light">Isi Survei</a>
+                </div>
+            </div>
+            <div class="hero-image reveal reveal-right">
+                <div class="image-wrapper-hover">
+                    <img id="heroImg" src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ilustrasi Bali Denpasar" style="cursor: pointer;">
+                    <div class="img-tip">Klik untuk ganti gambar</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tentang Bali Section -->
+    <section id="tentang" class="tentang section">
+        <div class="container tentang-container">
+            <div class="tentang-slider reveal reveal-left">
+                <div class="slider-wrapper" id="baliSlider">
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Budaya Bali Pura">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bali Beach">
+                    <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bali Rice Field">
+                </div>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+            <div class="tentang-text reveal reveal-right">
+                <h2>Tentang <span>Bali</span></h2>
+                <p>Denpasar, ibu kota Provinsi Bali, merupakan pusat pertemuan antara pesona warisan budaya leluhur dan dinamika kehidupan modern. Di sini, Anda dapat menemukan pura-pura megah yang berdiri berdampingan dengan hiruk-pikuk kehidupan kota, serta berbagai kesenian tradisional.</p>
+                
+                <!-- Fakta menarik yang ditambahkan -->
+                <div class="fakta-list">
+                    <div class="fakta-item">
+                        <i class="fas fa-mask"></i>
+                        <div>
+                            <h4 data-id="Tradisi Ogoh-Ogoh" data-en="Ogoh-Ogoh Tradition">Tradisi Ogoh-Ogoh</h4>
+                            <p data-id="Parade boneka raksasa karya pemuda setempat menjelang Hari Raya Nyepi." data-en="Giant puppet parade created by local youth ahead of Nyepi Day.">Parade boneka raksasa karya pemuda setempat menjelang Hari Raya Nyepi.</p>
+                        </div>
+                    </div>
+                    <div class="fakta-item">
+                        <i class="fas fa-monument"></i>
+                        <div>
+                            <h4 data-id="Monumen Bajra Sandhi" data-en="Bajra Sandhi Monument">Monumen Bajra Sandhi</h4>
+                            <p data-id="Simbol perjuangan rakyat Bali yang ikonik di Renon." data-en="Iconic symbol of the Balinese people's struggle in Renon.">Simbol perjuangan rakyat Bali yang ikonik di Renon.</p>
+                        </div>
+                    </div>
+                    <div class="fakta-item">
+                        <i class="fas fa-store"></i>
+                        <div>
+                            <h4 data-id="Pasar Badung" data-en="Badung Market">Pasar Badung</h4>
+                            <p data-id="Pasar tradisional terbesar di Bali, pusat nadi ekonomi masyarakat lokal." data-en="Bali's largest traditional market, the economic pulse of locals.">Pasar tradisional terbesar di Bali, pusat nadi ekonomi masyarakat lokal.</p>
+                        </div>
+                    </div>
+                    <div class="fakta-item">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <div>
+                            <h4 data-id="Pantai Sanur" data-en="Sanur Beach">Pantai Sanur</h4>
+                            <p data-id="Pesona sunrise terindah dengan ombak yang tenang dan suasana damai." data-en="Most beautiful sunrise charm with calm waves and peaceful vibe.">Pesona sunrise terindah dengan ombak yang tenang dan suasana damai.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game" class="game section bg-light">
+        <div class="container game-container">
+            <div class="game-text reveal reveal-left">
+                <h2>Jelajah <span>Denpasar</span></h2>
+                <p>Sebagai hiburan tambahan, kelompok kami juga mengembangkan sebuah game 2D interaktif bertema petualangan menelusuri kuliner di Bali. Bantu karakter utama kami mengumpulkan resep-resep masakan tradisional sambil menghindari rintangan yang seru!</p>
+                <a href="#" class="btn btn-primary mt-3">Mainkan Sekarang</a>
+            </div>
+            <div class="game-image reveal reveal-right">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ilustrasi Game 2D Retro">
+            </div>
+        </div>
+    </section>
+
+    <!-- Kuliner Khas Section -->
+    <section id="kuliner" class="kuliner section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Kuliner <span>Khas</span></h2>
+                <p>Nikmati ragam hidangan autentik dengan cita rasa rempah Bali yang khas</p>
+            </div>
+            
+            <div class="kuliner-grid">
+                <div class="kuliner-card reveal">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1626804475297-4160eb8bd8eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sate Lilit Bali">
+                    </div>
+                    <div class="card-content">
+                        <h3>Sate Lilit</h3>
+                        <p>Sate yang terbuat dari daging cincang berpadu parutan kelapa yang dililitkan pada batang serai, memberikan aroma harum tak terlupakan.</p>
+                    </div>
+                </div>
+
+                <div class="kuliner-card reveal" style="transition-delay: 0.2s">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1540304453481-970344d93991?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Es Daluman Bali">
+                    </div>
+                    <div class="card-content">
+                        <h3>Minuman Tradisional</h3>
+                        <p>Segarnya berbagai minuman khas Bali seperti Es Daluman atau Es Kelapa Muda yang melegakan dahaga di tengah teriknya matahari.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kuliner-info reveal">
+                <a href="#kontak" class="btn btn-primary btn-glow" data-id="Pesan Makanan Sekarang" data-en="Order Food Now">Pesan Makanan Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Survei Pembeli Section -->
+    <section id="survei" class="survei section bg-light">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Survei <span>Pembeli</span></h2>
+                <p>Bantu kami meningkatkan kualitas layanan dan produk</p>
+            </div>
+            <div class="form-container reveal">
+                <form id="surveiForm">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kelas">Kelas</label>
+                        <input type="text" id="kelas" name="kelas" placeholder="Masukkan kelas Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="produk">Produk yang dibeli</label>
+                        <select id="produk" name="produk" required>
+                            <option value="" disabled selected>Pilih produk</option>
+                            <option value="Sate Lilit">Sate Lilit</option>
+                            <option value="Minuman">Minuman</option>
+                            <option value="Jelajah Denpasar">Jelajah Denpasar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating (1-5)</label>
+                        <div class="rating-input">
+                            <input type="number" id="rating" name="rating" min="1" max="5" placeholder="5" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="saran">Saran</label>
+                        <textarea id="saran" name="saran" rows="4" placeholder="Berikan saran dan masukan Anda" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Kirim Survei</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="kontak section bg-dark">
+        <div class="container">
+            <div class="kontak-content reveal">
+                <h2>Hubungi Kami</h2>
+                <div class="kontak-cards">
+                    <a href="https://wa.me/6288227138205" target="_blank" class="kontak-card">
+                        <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                        <h3 data-id="WhatsApp Pemesanan" data-en="Order via WhatsApp">WhatsApp Pemesanan</h3>
+                        <p>+62 882-2713-8205</p>
+                    </a>
+                    <div class="kontak-card">
+                        <div class="icon"><i class="fas fa-users"></i></div>
+                        <h3>Nama Kelompok</h3>
+                        <p>Kelompok PKK Bali</p>
+                    </div>
+                    <div class="kontak-card">
+                        <div class="icon"><i class="fas fa-school"></i></div>
+                        <h3>Kelas</h3>
+                        <p>XII Tata Boga 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Explore Denpasar - Kelompok PKK Bali. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Popup UI untuk Survei Berhasil -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-modal">
+            <div class="popup-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            <h3>Berhasil Dikirim!</h3>
+            <p id="popupMessage">Terima kasih atas partisipasi Anda.</p>
+            <button class="btn btn-primary" id="closePopupBtn" type="button">Tutup</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
