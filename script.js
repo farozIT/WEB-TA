@@ -111,22 +111,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const closePopupBtn = document.getElementById('closePopupBtn');
 
     if (surveiForm && popupOverlay) {
+        // Commented out to allow standard HTML form submission to proses_survei.php
+        /*
         surveiForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
-            // Mengambil nilai input
             const nama = document.getElementById('nama').value;
             const produk = document.getElementById('produk').value;
-            
-            // Set pesan HTML
             popupMessage.innerHTML = `Terima kasih, <strong>${nama}</strong>!<br>Survei Anda untuk produk <strong>${produk}</strong> telah berhasil dikirim.`;
-            
-            // Munculkan popup modal
             popupOverlay.classList.add('active');
-            
-            // Reset form setelah disubmit
             surveiForm.reset();
         });
+        */
     }
 
     if (closePopupBtn) {
